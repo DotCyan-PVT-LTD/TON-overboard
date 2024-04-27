@@ -1,3 +1,40 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.checkbox-color input[type="checkbox"] {
+
+    accent-color: #4CAF50;
+
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ced4da;
+    height: 20px;
+
+    width: 20px;
+
+    border-radius: 3px;
+
+    background-color: white;
+
+}
+
+
+.checkbox-color input[type="checkbox"]:checked {
+    background-color: #4CAF50;
+}
+
+/* Style for the checkmark */
+.checkbox-color input[type="checkbox"]:checked:after {
+    content: '✓';
+    display: block;
+    color: white;
+    /* Checkmark color */
+    position: relative;
+    left: 2%;
+    bottom: 20%;
+    font-size: 18px;
+    /* Checkmark size */
+}

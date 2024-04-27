@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <TonConnectUIProvider manifestUrl="http://localhost:5173/tonconnect-manifest.json">
-      <Navbar />
+      {/* <Navbar /> */}
       <App />
     </TonConnectUIProvider>
   </React.StrictMode>
